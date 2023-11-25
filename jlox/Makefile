@@ -17,7 +17,7 @@ build_all: $(SOURCES)
 	@ printf "%8s %-60s %s\n" javac "$(SOURCES)" "$(JAVA_OPTIONS)"
 
 fmt:
-	java -jar google-java-format-1.18.1-all-deps.jar --replace *.java
+	java -jar bin/google-java-format-1.18.1-all-deps.jar --replace *.java
 
 
 .PHONY: default build_all
